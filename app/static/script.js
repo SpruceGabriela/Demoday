@@ -1,9 +1,11 @@
-let janelinhaLateral = document.querySelector('#contato');
-let menuHamburguer = document.querySelector('#menuHamburguer')
+let janela = document.querySelector('.janela');
+let menu = document.querySelector('.menu')
+
 
 function abrirMenu(){
-    janelinhaLateral.classList.toggle('abrirMenu');
-    menuHamburguer.classList.toggle('abrirMenu');
+    janela.classList.toggle('abrirMenu');
+    menu.classList.toggle('abrirMenu');
 }
 
-menuHamburguer.onclick = abrirMenu
+menu.onclick = abrirMenu;
+
