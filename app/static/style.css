@@ -7,11 +7,11 @@ body{
     margin:0;
     padding:0;
     font-family: sans-serif;
-    
+    background-color: pink;
 }
 
 header{
-    position: absolute;
+    position: fixed;
     grid-area: header;
     padding: 0 100px;
     background-color: purple;
@@ -27,6 +27,7 @@ header .logo{
     float: left;
     font-weight: bold;
     font-family: cursive;
+    cursor: pointer;
 }
 
 header nav{
@@ -48,9 +49,17 @@ header nav ul li{
     display: block;
 }
 
+header nav ul li:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+
 header nav ul li ul{
     flex-direction: column;
     display: none;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: -50px;
 }
 
 header nav ul li:hover ul{
@@ -60,12 +69,12 @@ header nav ul li:hover ul{
 
 header nav ul li ul li{
     margin:0;
-    padding:10px;
     display:inline-block;
     text-align: left;
     flex-direction: column;
     color:white;
-    background-color: purple;
+    
+    background-color: darkorchid;
 }
 
 .menu{
@@ -125,28 +134,28 @@ article{
 }
 
 .texto{
-    font-size: 24pt;
+    font-size: 28pt;
     margin-left: 40px;
     color: white;
-    font-family: cursive;
+    font-family: 'Pacifico', cursive;
 }
 
 section{
     grid-area: section;
     height: 400px;
-    background-color: blue;
+    background-color:white;
 }
 
 aside{
     grid-area: aside;
     height: 400px;
-    background-color: blueviolet;
+    background-color: rosybrown;
 }
 
 footer{
     grid-area: footer;
     height: 200px;
-    background-color: pink;
+    background-color: purple;
 }
 
 
@@ -166,6 +175,7 @@ footer{
     }
 
     header{
+        position: fixed;
         padding: 0 20px;
     }
 
