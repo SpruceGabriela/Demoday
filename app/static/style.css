@@ -143,7 +143,7 @@ article{
 section{
     grid-area: section;
     height: 400px;
-    background-color:white;
+    background-color:aqua;
 }
 
 aside{
@@ -155,7 +155,32 @@ aside{
 footer{
     grid-area: footer;
     height: 200px;
-    background-color: purple;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.faq{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.faq a{
+    text-decoration: none;
+    color:black;
+}
+
+.redesSociais{
+    margin-top: 20px;
+}
+
+.download img { 
+    width: 180px;
+    height: 120px;
+    margin-top: 20px;
 }
 
 
@@ -220,4 +245,13 @@ footer{
         transform: rotate(-45deg);
         top:49%;
       }  
+
+    footer{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }
