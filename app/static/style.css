@@ -14,20 +14,27 @@ header{
     position: fixed;
     grid-area: header;
     padding: 0 100px;
-    background-color: rgb(100, 247, 247);
+    background-color: white;
     width:100%;
     box-sizing: border-box;
 }
 
 header .logo{
-    color:white;
     height: 50px;
     line-height: 50px;
     font-size: 24px;
     float: left;
-    font-weight: bold;
-    font-family: cursive;
+    font-family: 'Dancing Script', cursive;
     cursor: pointer;
+}
+
+header img{
+    margin-top: 5px;
+}
+
+.logo{
+    color: rgb(2, 2, 27);
+    height: 20px;
 }
 
 header nav{
@@ -44,13 +51,13 @@ header nav ul li{
     line-height: 50px;
     width: 120px;
     text-align: center;
-    color: white;
+    color:rgb(2, 2, 27);
     text-decoration: none;
     display: block;
 }
 
 header nav ul li:hover{
-    background-color: rgb(44, 199, 199);
+    background-color: rgb(249, 240, 252);
     cursor: pointer;
 }
 
@@ -72,9 +79,9 @@ header nav ul li ul li{
     display:inline-block;
     text-align: left;
     flex-direction: column;
-    color:white;
+    color: rgb(2, 2, 27);
     
-    background-color:rgb(73, 238, 238);
+    background-color: rgb(234, 213, 241);
 }
 
 .menu{
@@ -91,7 +98,7 @@ header nav ul li ul li{
 position: absolute;
 height: 5px;
 width: 30px;
-background-color: white;
+background-color: rgb(2, 2, 27);
 border-radius: 10px;
 transition: all ease 0.3s;
 }
@@ -100,7 +107,7 @@ transition: all ease 0.3s;
     position: absolute;
     height: 5px;
     width: 30px;
-    background-color: white;
+    background-color:rgb(2, 2, 27);
     border-radius: 10px;
     transition: all ease 0.3s;
 }
@@ -109,7 +116,7 @@ transition: all ease 0.3s;
     position: absolute;
     height: 5px;
     width: 30px;
-    background-color: white;
+    background-color:rgb(2, 2, 27);
     border-radius: 10px;
     
 }
@@ -128,48 +135,18 @@ transition: all ease 0.3s;
 
 article{
     grid-area: article;
-    background-color: black;
-    height: 500px;
-    width: 100%;
-}
-
-#SLIDE_BG{
-    width: 100%;
-    height: 500px;
-    background-position: center center;
-    background-size: cover;
+    background-image: url("./images/banner.png");
+    background-size: 1400px 600px;
     background-repeat: no-repeat;
-    backface-visibility: hidden;
-    animation: SLIDE_BG 8s linear infinite 0s;
-    animation-timing-function: ease-in-out;
-    background-image: url("{% static 'images/imagem1.jpg' %}");
+    height: 600px;
+    width: 100%;
 }
 
-@keyframes SLIDE_BG {
-    0% {
-        background-image: url("{% static 'images/imagem1.jpg' %}");
-    }
-    
-    50% {
-        background-image: url("{% static 'images/imagem2.jpg' %}");
-    }
-
-    100% {
-        background-image: url("{% static 'images/imagem3.jpg' %}");
-    }
-
-}
-
-.texto{
-    font-size: 28pt;
-    margin-left: 40px;
-    color: white;
-    font-family: 'Pacifico', cursive;
-}
 
 section{
     grid-area: section;
     height: 400px;
+    width: 100%;
     background-color:aqua;
 }
 
@@ -177,6 +154,7 @@ aside{
     grid-area: aside;
     height: 400px;
     background-color: rosybrown;
+    width: 100%;
 }
 
 footer{
@@ -197,7 +175,7 @@ footer{
 
 .faq a{
     text-decoration: none;
-    color:black;
+    color:rgb(2, 2, 27) ;
 }
 
 .redesSociais{
@@ -205,6 +183,10 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.redesSociais p{
+    color: rgb(2, 2, 27);
 }
 
 .download img { 
@@ -219,7 +201,7 @@ footer{
     body{
         display: grid;
         grid-template-areas: 'header header header header'
-                            
+                            'article article article article'
                             'section section section section'
                             'aside aside aside aside'
                             'footer footer footer footer';
@@ -234,6 +216,11 @@ footer{
         padding: 0 20px;
     }
 
+    header h1{
+        color: rgb(2, 2, 27);
+    
+    }
+
     .menu{
         display:block;
 
@@ -243,9 +230,9 @@ footer{
         position: absolute;
         width: 100%;
         height: 100;
-        background-color: purple;
+        background-color:white;
         top: 50px;
-        transform: translateY(-400vw);
+        transform: translateX(-400vw);
         transition: 0.5s;
         z-index: -5;
         left:0;
@@ -254,14 +241,20 @@ footer{
     header nav ul{
         display: block;
         text-align: center;
+        background-color:  white;
     }
 
     header nav ul li a{
         border-bottom: 1px solid white(0, 0, 0, .2)
     }
 
+    .t1 .t2 .t3{
+        background-color: color: rgb(2, 2, 27);
+    
+    }
+
     .abrirMenu{
-        transform: translateY(0);
+        transform: translateX(0);
         transition: 0.5s;
         z-index: 5;
     }
@@ -275,6 +268,16 @@ footer{
         transform: rotate(-45deg);
         top:49%;
       }  
+
+      article{
+        grid-area: article;
+        background-image: url("./images/banner.png");
+        background-size: 100% 400px;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+    }
+    
 
     footer{
         height: 350px;
