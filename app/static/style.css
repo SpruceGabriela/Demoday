@@ -2,6 +2,8 @@ body{
     display: grid;
     grid-template-areas: 'header header header header'
                         'article article article article'
+                        'sobre sobre sobre sobre'
+                        'bgvideo bgvideo bgvideo bgvideo'
                         'section section aside aside'
                         'footer footer footer footer'
                         'div div div div';
@@ -138,12 +140,29 @@ article{
     grid-area: article;
     background-image: url("./images/banner1.jpg");
     background-size: cover;
-    
     background-repeat: no-repeat;
     height: 600px;
     width: 100%;
 }
 
+ #sobre{
+    grid-area: sobre;
+    height: 500px;
+    background-color: cadetblue;
+}
+
+#bgvideo{
+    grid-area: bgvideo;
+    height: 500px;
+    background-image: url("./images/libras.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+#bgvideo h1,p{
+    color: white;
+}
 
 section{
     grid-area: section;
@@ -213,6 +232,8 @@ footer{
         display: grid;
         grid-template-areas: 'header header header header'
                             'article article article article'
+                            'sobre sobre sobre sobre'
+                            'bgvideo bgvideo bgvideo bgvideo'
                             'section section section section'
                             'aside aside aside aside'
                             'footer footer footer footer'
@@ -289,7 +310,19 @@ footer{
         height: 400px;
         width: 100%;
     }
-    
+
+    #bgvideo{
+    grid-area: bgvideo;
+    height: 500px;
+    background-image: url(images/libras.jpg);
+}
+
+    #bgvideo{
+    width: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;   
+}
 
     footer{
         height: 350px;
