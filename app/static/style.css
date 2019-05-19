@@ -147,14 +147,33 @@ article{
 
 section{
     grid-area: section;
-    height: 400px;
+    height: 470px;
     width: 100%;
-    background-color:aqua;
+    background-color: rgb(249, 240, 252);
+}
+
+section h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 15pt;
+}
+
+section p{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+section div{
+    display: flex;
+    justify-content: center;
 }
 
 aside{
     grid-area: aside;
-    height: 400px;
+    height: 470px;
     background-color: rosybrown;
     width: 100%;
 }
@@ -288,6 +307,25 @@ footer{
         background-repeat: no-repeat;
         height: 400px;
         width: 100%;
+    }
+
+    section h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        font-size: 15pt;
+    }
+    
+    section p{
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    
+    section div{
+        display: flex;
+        justify-content: center;
     }
     
 
