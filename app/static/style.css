@@ -149,7 +149,24 @@ article{
     grid-area: sobre;
     height: 500px;
     background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
 }
+
+/*/#sobre img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*/
+.icone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+
 
 #bgvideo{
     grid-area: bgvideo;
