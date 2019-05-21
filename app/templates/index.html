@@ -22,14 +22,8 @@
     <header>
         <div class="logo">
             <img src="{% static 'images/brain.png' %}" alt="">
+            RAAP
         </div>
-
-        <div class="nomeh1">
-            <h1>RAAP:
-            Rede de Apoio e Atendimento Psicológico
-            </h1>
-        </div>
-
         <nav class="janela">
             <ul>
                 <li>Conheça
@@ -64,13 +58,10 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="http://placekitten.com/500/500" class="d-block w-100" alt="...">
+            <img src="{% static './images/banner.png' %}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="http://placekitten.com/500/500" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="http://placekitten.com/500/500" class="d-block w-100" alt="...">
+            <img src="{% static './images/libras.png' %}" class="d-block w-100" alt="...">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -85,7 +76,9 @@
 
     <!-- END BOOTSTRAP -->
     
-
+    <article></article>
+    <section class="section"></section>
+    <aside class="aside"></aside>
 
     <div id="sobre">
         <div class="titulo">
@@ -94,28 +87,43 @@
     <div class="img">
         <div class="icone">
         <img src="{% static 'images/seo.png' %}" alt="">
-        <p><span>1.</span> Conectamos você </p><p> diretamente com um profissional</p>
+        <p><span>1.</span> Conectamos você </p>
+        <p> diretamente com um profissional</p>
         </div>
         <div class="icone">
         <img src="{% static 'images/calendar.png' %}" alt="">
-        <p><span>2.</span> Escolha o melhor dia e </p><p> horário no conforto da sua casa</p>
+        <p><span>2.</span> Escolha o melhor dia e </p>
+        <p> horário no conforto da sua casa</p>
         </div>
         <div class="icone">
         <img src="{% static 'images/piggy-bank.png' %}" alt="">
-        <p><span>3.</span> E tudo isso gratuito! </p><p> Prático, seguro e acessível!</p>
+        <p><span>3.</span> E tudo isso gratuito! </p>
+        <p> Prático, seguro e acessível!</p>
         </div>
     </div>
     <div class="btn">
         <button><a href="/cadastro">Cadastre-se</a></button>
     </div>
     </div>
-    <div id="bgvideo">
-        <h1>kkkkkk</h1>
-        <p>wow</p>
-    </div>
-    <section>section</section>
-    <aside>aside</aside>
-    <footer>
+    <section>
+        <h2>Canal RAAP</h2>
+       <p>Confira aqui as palestras e debates</p>
+       <p> realizados em parceria com a RAAP:</p>
+       <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UCdrioRrLtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <aside>
+       <h3>BLOG</h3>
+        <p>Notícias</p>
+        <div class="midia">
+            <li><a href="http://www.scielo.br/pdf/%0D/jbpsiq/v55n4/a01v55n4.pdf">Prevalência de depressão entre estudantes universitários</a></li>
+            <li><a href="https://www.sciencedirect.com/science/article/pii/S2255482312701558">Depressive symptoms among medical intern students in a Brazilian public university</a></li>
+            <li><a href="https://www.e-publicacoes.uerj.br/index.php/revispsi/article/view/8229">Suicídio de universitários: o vazio existencial de jovens na contemporaneidade</a></li>
+            <li><a href="https://gauchazh.clicrbs.com.br/saude/noticia/2018/07/a-prevencao-do-suicidio-entre-universitarios-cjj8sjxkx0moa01qo1dff3m98.html">A prevenção do suicídio entre universitários</a></li>
+        </div>
+</aside>
+    <footer class="footer">
         <div class="faq"> 
             <a href="">Perguntas Frequentes</a>
             <a href="">Termos de Uso</a>
@@ -138,7 +146,7 @@
     </footer>
     <div id="direitosAutorais">
             <img src="{% static 'images/brain.png' %}" alt="">
-            <p>2019 - RAAP</p>
+            <p> RAAP Rede de Apoio e Atendimento Psicológico - 2019</p>
     </div>
 </body>
 </html>

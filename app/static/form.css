@@ -1,21 +1,24 @@
-body{
+ body {
     display: grid;
     grid-template-areas: 'header header header header'
-                         'article article article article'
-                         'carouselExampleControls carouselExampleControls carouselExampleControls carouselExampleControls '
-                         'sobre sobre sobre sobre'
-                         'section section aside aside'
+                         'form form form form'
                          'footer footer footer footer'
                          'direitosautorais direitosautorais direitosautorais direitosautorais';
-    grid-template-columns: 25% 25% 25% 25%;
     margin:0;
     padding:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: rgb(235, 189, 231);
 }
 
 header {
-    position: fixed;
+    top:0;
+    position:fixed;
     grid-area: header;
-    padding: 0 100px;
+    padding: 0 30px;
     background-color: white;
     width:100%;
     box-sizing: border-box;
@@ -145,164 +148,21 @@ transition: all ease 0.3s;
     top:34px;
 }
 
-/* Fim menu */
-
-#carouselExampleControls{
-    grid-area: carouselExampleControls;
-    height: 500px;
-    margin-top: 55px;
-    z-index: -10;
-}
-
-.carousel-inner{
-    height: 100%;
-}
-
-article{
-    display: none;
-}
-
-/* Inicio do sobre */
-#sobre {
-    grid-area: sobre;
+form {
+    grid-area: form;
+    margin-top: 50px;
+    width: 50%;
     height: 500px;
     display: flex;
     flex-direction: column;
+    background-color: rgb(89 56 90);
     align-items: center;
-}
-
-.titulo h2{
-    margin-top: 30px;
-    color: indigo;
-    
-}
-
-.img{
-    margin-top: 40px; 
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    align-items: center;
-}
-
-.icone{
-    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.icone p {
-    color: gray; 
-}
-
-.icone span{
-    color: blueviolet;
-    font-weight: bold;
-}
-
-.btn{
-    margin-top: 70px;
-    display: flex;
-    width: 250px;
-}
-
-.btn a{
-    text-decoration: none;
-    width: 70px;
+    font-family: cursive;
     color: white;
-}
-
-.btn button{
-    width: 250px;
-    height: 50px;
-    background-color: blueviolet;
-    border-radius:  20px;
-}
-
-section{
-    grid-area: section;
-    height: 500px;
-    width: 97%;
-    background-color: rgb(249, 240, 252);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
     border-radius: 10%;
 }
 
-
-section h2{
-    color:rgb(2, 2, 27);
-    font-size: 20pt;
-    display: flex;
-    justify-content: center;
-    font-family: 'Dancing Script', cursive;
-    margin-top: 3%;
-    margin-bottom: 2%;
-    font-weight: bold;
-}
-
-section p{
-    color:rgb(2, 2, 27);
-    font-size: 15pt;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2%;
-    margin-top: 0%;
-}
-
-section div{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-aside{
-    grid-area: aside;
-    height: 500px;
-    background-color: rgb(249, 240, 252);
-    width: 100%;
-    border-radius: 10%;
-}
-
-
-aside h3{
-    font-family: 'Dancing Script', cursive;
-    display: flex;
-    justify-content: center;
-    font-size: 20pt;
-    color:rgb(2, 2, 27);
-    margin-top: 3%;
-    font-weight: bold;
-}
-
-aside p{
-    display: flex;
-    justify-content: center;
-    font-size: 18pt;
-    color:rgb(2, 2, 27);
-    margin-top: 3%;
-}
-
-aside div {
-    flex-direction: column;
-    display: flex;
-    justify-content: space-around;
-    color:rgb(2, 2, 27);
-    font-size: 15pt;
-    list-style-type: circle;
-    width: 90%;
-    height: 70%;
-    padding-left: 10%;
-}
-
-aside div li a{
-    text-decoration: none;
-    color:rgb(2, 2, 27);
-    font-size: 15pt;
-}
 
 .footer{
     grid-area: footer;
@@ -310,6 +170,7 @@ aside div li a{
     background-color:white;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .faq{
@@ -364,9 +225,10 @@ aside div li a{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    width: 100%;
 }
 
 #direitosAutorais p{
     color: rgb(234, 213, 241);
 }
+
